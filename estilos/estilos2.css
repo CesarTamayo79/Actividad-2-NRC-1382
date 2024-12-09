@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(ind.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7%;
+    border-bottom: 1px solid #262323;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu .logo img {
+    height: 3rem;
+}
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu nav ul li a:hover {
+    color: green;
+    border-bottom: 2px solid green;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    padding: 20px;
+    margin-top: 5rem;
+    flex: 1;
+}
+
+main h1 {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: #262323;
+}
+
+.funciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+aside input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+aside button {
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+aside button:hover {
+    background-color: darkgreen;
+}
+
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.integrantes p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.Info {
+    text-align: left;
+    background-color: #f4c7a0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}

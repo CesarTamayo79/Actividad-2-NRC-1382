@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="estilos/estilos3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="menu">
+        <a href="#" class="logo">
+            <img src="complemento/descarga-removebg-preview.png" alt="Logo del sitio">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="registro.html">Registro de Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Registro de Usuarios</h1>
+        <aside class="formulario">
+            <form id="userForm">
+                <label>ID:</label><input type="text" id="userID"><br>
+                <label>Cédula:</label><input type="text" id="cedula"><br>
+                <label>Nombre:</label><input type="text" id="name"><br>
+                <label>Fecha de Nacimiento:</label><input type="date" id="dob"><br>
+                <label>Ciudad:</label>
+                <select id="city">
+                    <option>Quito</option>
+                    <option>Guayaquil</option>
+                    <option>Cuenca</option>
+                    <option>Esmeraldas</option>
+                    <option>Loja</option>
+                    <option>El Oro</option>
+                </select><br>
+                <button type="button" onclick="registerUser()">Registrar</button>
+            </form>
+        </aside>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Actividad 2. Todos los derechos reservados - CELTX.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
